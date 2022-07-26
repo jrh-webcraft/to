@@ -1,0 +1,17 @@
+{
+  "name": "@jrh/to",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Tiny utility to get the absolute path to a file in an ES6 module.",
+  "main": "source/to.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jrh-webcraft/to.git"
+  },
+  "scripts": {
+    "test": "vitest run --globals"
+  },
+  "devDependencies": {
+    "vitest": "^0.19.1"
+  }
+}
