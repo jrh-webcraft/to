@@ -19,7 +19,7 @@ const path = to(target, source)
 | Name | Type | Description |
 | :-- | :-- | :-- |
 | target | String | The relative path to the target file. |
-| source | String | The absolute path to the source file (usually `import.meta.url`). |
+| source | Object | An object with one key (`from`) which contains the absolute path to the source file (usually `import.meta.url`). |
 
 ## Example
 
@@ -35,8 +35,8 @@ source/
 
 **1.js**
 ```javascript
-import to from '@jrh/to'
+import pathTo from '@jrh/to'
 
-const path = to('../folder2/2.js', import.meta.url)
+const path = pathTo('../folder2/2.js', { from: import.meta.url })
 // => /absolute/path/to/folder2/2.js
 ```

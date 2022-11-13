@@ -1,3 +1,3 @@
-export default (target, source) => {
-  return new URL(target, source).pathname
+export default (target, { from }) => {
+  return new URL(target, from).pathname
 }
